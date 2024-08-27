@@ -174,7 +174,7 @@
 }
 .banner_img img {
 	width: 83% !important;
-	height: 83% !important;
+	height: 100% !important;
 	margin-bottom: 40px;
 	border: 5px solid #FFB400;
 }

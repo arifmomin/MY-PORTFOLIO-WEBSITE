@@ -118,18 +118,18 @@
 /* ------------------------menu part end------------------------ */
 /* ========================banner part start====================== */
 .banner_col {
-	height: 800px;
+	height: 850px;
 	padding-top: 125px;
 	padding-bottom: 70px;
 	background-position: none;
 	background-repeat: none;
 	background-size: none;
+	flex-direction: column-reverse;
 }
 
 .banner_heading {
 	text-align: center;
 }
-
 .banner_heading h1 {
 	font-size: 36px;
 	width: 320px;
@@ -169,11 +169,15 @@
 	width: 10px;
 	height: 10px;
 }
-
-/* .banner_img {
-	display: none;
-} */
-
+.banner_img {
+	justify-content: center;
+}
+.banner_img img {
+	width: 83% !important;
+	height: 90% !important;
+	margin-bottom: 40px;
+	border: 5px solid #FFB400;
+}
 .banner_secound_heading h1 {
 	font-size: 36px;
 	line-height: 50px;

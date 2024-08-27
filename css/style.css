@@ -490,9 +490,9 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     display: flex !important;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
-    gap: 268px;
+    column-gap: 268px;
     align-items: center;
     z-index: 2;
 }

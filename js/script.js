@@ -42,7 +42,7 @@ back_to_top.addEventListener('click',function(){
 
 // ========================banner part slider=================
 $('.banner_row').slick({
-  autoplay: true,
+  // autoplay: true,
   dots: true,
   infinite: true,
   speed: 1000,

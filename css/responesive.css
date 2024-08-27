@@ -173,8 +173,8 @@
 	justify-content: center;
 }
 .banner_img img {
-	width: 83% !important;
-	height: 70% !important;
+	width: 300px !important;
+	height: 327px !important;
 	margin-bottom: 40px;
 	border: 5px solid #FFB400;
 }

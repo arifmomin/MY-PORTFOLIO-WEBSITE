@@ -9,20 +9,28 @@ $(document).ready(function() {
   }, 1);});
 // ======================pre loader======================
 // ======================= menu part==============
-let menu_bar = document.querySelector('.menu_bar')
-console.log(menu_bar)
-window.addEventListener('scroll', function () {
-  let scrolling = this.scrollY
-  if (scrolling > 100) {
-    menu_bar.classList.add('menu_fixed')
-  } else {
-    menu_bar.classList.remove('menu_fixed')
+const navbar = document.querySelector('.menu_bar');
+window.addEventListener('scroll',() =>{
+  let scrolling = this.scrollY;
+  if(scrolling > 100){
+    navbar.classList.add('menu_fixed');
+  }else{
+    navbar.classList.remove('menu_fixed');
   }
-})
+});
+
+const navbarLink = document.querySelectorAll('.navbar-link');
+navbarLink.forEach(item =>{
+  item.addEventListener('click',() =>{
+    navbarLink.forEach(navLink =>{
+      navLink.classList.remove('navbar-active');
+    });
+    item.classList.add('navbar-active');
+  });
+});
 
 // =====================back to top button===================
 let back_to_top = document.querySelector('.back_to_top')
-console.log(back_to_top)
 window.addEventListener('scroll', function () {
   let scrolling = this.scrollY
   if (scrolling > 100) {

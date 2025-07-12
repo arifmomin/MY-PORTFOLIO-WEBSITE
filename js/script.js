@@ -20,12 +20,16 @@ window.addEventListener('scroll',() =>{
 });
 
 const navbarLink = document.querySelectorAll('.navbar-link');
-navbarLink.forEach(item =>{
-  item.addEventListener('click',() =>{
-    navbarLink.forEach(navLink =>{
-      navLink.classList.remove('navbar-active');
-    });
-    item.classList.add('navbar-active');
+navbarLink.forEach(navlink => {
+  navlink.addEventListener('click' , () =>{
+    if(navlink.classList.contains('navbar-active')){
+      navlink.classList.remove('navbar-active')
+      console.log(true);
+    }else{
+      console.log(false);      
+      navbarLink.forEach(item => item.classList.remove('navbar-active'));
+      navlink.classList.add('navbar-active');
+    }
   });
 });
 

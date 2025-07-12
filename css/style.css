@@ -398,6 +398,15 @@ html {
     opacity: 1;
     visibility: visible;
 }
+.dropdown-icon .fa-angle-up{
+    display: none;
+} 
+.navbar-active .fa-angle-up{
+    display: inline-block !important;
+}
+.navbar-active .fa-angle-down{
+    display: none !important;
+}
 .dropdown-toggle::after {
     display: inline-block;
     margin-left: 0px;
